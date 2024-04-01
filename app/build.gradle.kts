@@ -106,6 +106,6 @@ dependencies {
     api("androidx.navigation:navigation-fragment-ktx:$nav_version")
     //mockito
     testImplementation ("org.mockito:mockito-core:5.8.0")
-
+    testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
 
 }

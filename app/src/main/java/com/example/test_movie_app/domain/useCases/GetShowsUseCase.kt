@@ -7,10 +7,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
-class GetMoviesUseCase @Inject constructor(val repository: TvShowsRepository) {
-/*suspend operator fun invoke():Response<ShowsResponse> {
-     return repository.getTvShows()
-}*/
+class GetShowsUseCase @Inject constructor(val repository: TvShowsRepository) {
      operator fun invoke(): Flow<Resource<List<ShowItem>>> = flow {
           emit(Resource.Loading())
           try {

@@ -11,12 +11,6 @@
       <entry key="validate_progressBar_visible()">
         <State />
       </entry>
-      <entry key="validate_shows_list_visibility()">
-        <State />
-      </entry>
-      <entry key="validate_topBar_title_visibilty()">
-        <State />
-      </entry>
     </value>
   </component>
 </project>

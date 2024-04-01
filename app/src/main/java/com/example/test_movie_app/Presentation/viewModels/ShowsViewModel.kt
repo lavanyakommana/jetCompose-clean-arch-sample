@@ -5,13 +5,13 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.test_movie_app.Presentation.viewModels.stateHolders.ShowsState
 import com.example.test_movie_app.common.Resource
-import com.example.test_movie_app.domain.domain.useCases.GetMoviesUseCase
+import com.example.test_movie_app.domain.domain.useCases.GetShowsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class ShowsViewModel @Inject constructor(val useCase: GetMoviesUseCase):ViewModel(){
+class ShowsViewModel @Inject constructor(val useCase: GetShowsUseCase):ViewModel(){
     //private var _response= MutableLiveData<List<ShowsResponseItem>>()
     private var _response = mutableStateOf(ShowsState())
     val response:  State<ShowsState>
