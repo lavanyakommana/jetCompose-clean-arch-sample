@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="app">
+        <State />
+      </entry>
+      <entry key="is_item_displayed()">
+        <State />
+      </entry>
+      <entry key="validate_progressBar_visible()">
+        <State />
+      </entry>
+      <entry key="validate_shows_list_visibility()">
+        <State />
+      </entry>
+      <entry key="validate_topBar_title_visibilty()">
+        <State />
+      </entry>
+    </value>
+  </component>
+</project>
