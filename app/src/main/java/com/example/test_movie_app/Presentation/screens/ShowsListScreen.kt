@@ -43,7 +43,7 @@ fun ShowsListScreen(navHostController: NavHostController,viewModel: ShowsViewMod
                 }
             }
             LazyVerticalStaggeredGrid(columns = StaggeredGridCells.Fixed(2),
-                modifier = Modifier.testTag("shows_list"),
+                modifier = Modifier.padding(8.dp).testTag("shows_list"),
                 verticalItemSpacing = 10.dp, // Vertical spacing
                 horizontalArrangement = Arrangement.spacedBy(10.dp) ) {
               result.data?.let {
