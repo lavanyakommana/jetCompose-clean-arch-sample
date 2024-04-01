@@ -1,4 +1,5 @@
 package com.example.test_movie_app.Presentation.viewModels
+
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
@@ -11,15 +12,16 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class ShowsViewModel @Inject constructor(val useCase: GetShowsUseCase):ViewModel(){
-    //private var _response= MutableLiveData<List<ShowsResponseItem>>()
+class ShowsViewModel @Inject constructor(val useCase: GetShowsUseCase) : ViewModel() {
     private var _response = mutableStateOf(ShowsState())
-    val response:  State<ShowsState>
-        get()= _response
+    val response: State<ShowsState>
+        get() = _response
+
     init {
         getAllTvShows()
     }
-    private fun getAllTvShows(){
+
+    private fun getAllTvShows() {
         viewModelScope.launch {
             useCase().collect {
                 when (it) {
@@ -40,5 +42,5 @@ class ShowsViewModel @Inject constructor(val useCase: GetShowsUseCase):ViewModel
             }
 
         }
-        }
     }
+}

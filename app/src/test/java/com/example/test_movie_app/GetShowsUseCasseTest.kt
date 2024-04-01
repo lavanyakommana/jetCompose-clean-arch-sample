@@ -10,7 +10,7 @@ import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito
 
-class GetShowsUseCasseTest {
+class GetShowsUseCaseTest {
     private lateinit var repository: TvShowsRepository
     private lateinit var getMovieUseCase: GetShowsUseCase
     private val showsList = Mockito.mock<List<ShowItem>>()
